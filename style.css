@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playpen Sans";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.Center {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+
+.box {
+  height: fit-content;
+  width: 35vw; /*100*/
+  /* max-width: 40vw; */
+  background-color: white;
+  padding: 2.1vw;
+  margin-top: 5vw;
+  border-radius: 0.6vw;
+}
+
+.box h1 {
+  font-size: 1.6vw;
+  font-weight: 600;
+  /* font-family: 'Roboto'; */
+}
+
+.text {
+  /* width: 80%; */
+  padding: 1vw 1.5vw;
+  /* border-radius: 5vw; */
+  outline: none;
+  border: none;
+  background-color: transparent;
+  flex: 1;
+}
+
+.add {
+  width: 8vw;
+  height: 3vw;
+  padding: 0vw 1.2vw;
+  background-color: orangered;
+  border: none;
+  color: white;
+  border-radius: 2vw;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.075);
+  height: 3vw;
+  margin-top: 1.5vw;
+  border-radius: 5vw;
+}
+
+.container {
+  margin-top: 2vw;
+  width: 100%;
+  /* background: #000; */
+  padding-left: 2vw;
+}
+
+.list li {
+  margin-top: 1vw;
+  position: relative;
+  list-style: circle;
+}
+
+.list li span {
+  background-color: rgba(0, 0, 0, 0.075);
+  font-size: 1.3vw;
+  border-radius: 1vw;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  width: 2vw;
+  height: 2vw;
+  text-align: center;
+  line-height: 1.7vw;
+}
+
+.list li:hover span {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+@media (max-width: 600px) {
+  .Center {
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(
+      circle,
+      rgba(63, 94, 251, 1) 0%,
+      rgba(252, 70, 107, 1) 100%
+    );
+  }
+
+  .box {
+    height: fit-content;
+    width: 80vw;
+    background-color: white;
+    padding: 8vw;
+    border-radius: 2vw;
+  }
+
+  .box h1 {
+    font-size: 5vw;
+    font-weight: 600;
+    /* font-family: 'Roboto'; */
+  }
+
+  .text {
+    /* width: 80%; */
+    padding: 3vw;
+    /* border-radius: 5vw; */
+    outline: none;
+    border: none;
+    background-color: transparent;
+    flex: 1;
+  }
+
+  .add {
+    width: 20vw;
+    height: 10vw;
+    padding: 0vw 1.2vw;
+    background-color: orangered;
+    border: none;
+    color: white;
+    border-radius: 5vw;
+    cursor: pointer;
+  }
+
+  .row {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.075);
+    height: 10vw;
+    margin-top: 5vw;
+    border-radius: 5vw;
+  }
+
+  .container {
+    margin-top: 5vw;
+    width: 100%;
+    /* background: #000; */
+    padding-left: 6vw;
+  }
+  
+  .list li {
+    margin-top: 3vw;
+    position: relative;
+    list-style: circle;
+    font-size: 4.5vw;
+  }
+  
+  .list li span {
+    /* background-color: rgba(0, 0, 0, 0.075); */
+    font-size: 4vw;
+    border-radius: 4vw;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    width: 6vw;
+    height: 6vw;
+    text-align: center;
+    line-height: 6vw;
+  }
+  
+  .list li:hover span {
+    background-color: rgba(0, 0, 0, 0.075);
+  }
+}
